@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>10th District Oil & Gas Business Activity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<div class="container">
+
+<header class="page-header">
+  <h1 class="editorial-title">
+    10th District Oil & Gas Business Activity Nosedived in Q4 2025
+  </h1>
+
+  <div class="meta-row">
+    <div class="badge">Dataset: Designer Developer Assessment</div>
+    <div class="badge">Tools: Python · Plotly · Tableau</div>
+    <div class="badge">Interactive</div>
+    <div style="flex:1"></div>
+    <div class="byline">Arnav Singhal · Published February 6, 2026</div>
+  </div>
+
+</header>
+
+<section class="intro">
+  <p class="editorial-dek">
+    Quarterly index data shows a sharp deterioration in business conditions,
+    with both quarter-over-quarter and year-over-year measures turning deeply negative.
+  </p>
+</section>
+
+<section class="editorial-intro">
+  <p>
+    The following analysis examines quarterly movements in the
+    <strong>10th District Oil & Gas Business Activity Index</strong>,
+    comparing conditions both against the previous quarter and the same quarter one year earlier.
+  </p>
+
+  <p>
+    Index values above zero indicate expansion, while negative readings
+    signal contraction in business activity. Tracking both short-term
+    momentum and longer-term trends provides a clearer picture of turning points in the sector.
+  </p>
+</section>
+
+<section class="viz-section">
+  <div>
+    <h2 class="section-title">Business Activity Trends Over Time</h2>
+
+    <p class="section-explainer">
+      This interactive line chart tracks quarterly changes in oil and gas business activity
+      from 2021 through 2025, comparing conditions versus the prior quarter and the prior year.
+    </p>
+
+    <div class="insight-callout">
+      <strong>Key insight:</strong>
+      After remaining volatile but largely positive through 2021–2022,
+      business activity weakened sharply in 2023 and remained in contraction.
+      The downturn intensified in <strong>Q4 2025</strong>, marking the steepest decline in the series.
+    </div>
+
+    <div class="chart-card">
+      <iframe src="plotly_chart.html"></iframe>
+    </div>
+
+    <p class="chart-method">
+      <strong>How this chart was built:</strong>
+      The visualization was developed using <strong>Python and Plotly</strong>.
+      Quarterly index values were structured into a tidy dataset, with time
+      encoded on the x-axis and index scores on the y-axis.
+      Interactive controls allow users to focus on specific time ranges
+      while preserving the full historical context.
+    </p>
+  </div>
+
+  <aside class="aside">
+    <div class="stats">
+      <div class="stat-card">
+        <div class="label">Latest</div>
+        <div class="value">Q4 2025: −39</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="label">Trend</div>
+        <div class="value">Steep contraction</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="label">Scope</div>
+        <div class="value">2021 – 2025</div>
+      </div>
+    </div>
+
+    <h3 class="section-title" style="font-size:16px; margin-top:0">At a glance</h3>
+    <p>
+      • Interactive controls available in the line chart (top-right)
+    </p>
+
+    <p style="margin-top:12px; font-size:13px; color:var(--muted)">
+      <a href="../data/processed/oil_gas_activity.csv">Download data (CSV)</a>
+    </p>
+  </aside>
+
+</section>
+
+
+<section class="viz-section">
+  <div style="grid-column:1 / span 1">
+    <h2 class="section-title">Exploring Trends Interactively (Tableau Version)</h2>
+
+    <p class="section-explainer">
+      The Tableau version allows readers to interact directly with the data,
+      enabling filtering by year and comparison measure to examine specific periods in greater detail.
+    </p>
+
+    <div class="tableau-wrapper">
+      <div class="tableauPlaceholder" id="viz1770316258294" style="position: relative">
+        <noscript>
+          <a href="#">
+            <img
+              alt="Index score · Quarterly comparison"
+              src="https://public.tableau.com/static/images/10/10thDistrictOilGasBusinessActivity/Sheet1/1_rss.png"
+              style="border: none"
+            />
+          </a>
+        </noscript>
+
+        <object class="tableauViz" style="display:none;">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="embed_code_version" value="3" />
+          <param name="site_root" value="" />
+          <param name="name" value="10thDistrictOilGasBusinessActivity/Sheet1" />
+          <param name="tabs" value="no" />
+          <param name="toolbar" value="yes" />
+          <param name="language" value="en-US" />
+        </object>
+      </div>
+
+      <script type="text/javascript">
+        var divElement = document.getElementById("viz1770316258294");
+        var vizElement = divElement.getElementsByTagName("object")[0];
+        vizElement.style.width = "100%";
+        vizElement.style.height = "600px";
+        var scriptElement = document.createElement("script");
+        scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <p class="chart-method">
+      <strong>How this chart was built:</strong>
+      This dashboard was created in <strong>Tableau Public</strong> using the same processed dataset.
+      Dual line measures represent quarter-over-quarter and year-over-year changes,
+      with interactive filters enabling users to isolate specific years or trends.
+    </p>
+  </div>
+
+  <aside class="aside">
+    <h3 style="font-size:15px; margin-top:0">Notes</h3>
+    <p>
+      The Tableau embed uses Public's JS API. If the embed fails to load, use the
+      CSV link at the top to open the data locally.
+    </p>
+  </aside>
+
+</section>
+
+<section class="viz-section">
+  <div>
+    <h2 class="section-title">Recent Quarter Comparison</h2>
+
+    <p class="section-explainer">
+      Focusing on the most recent eight quarters highlights how business conditions
+      have deteriorated in the short term, culminating in a pronounced contraction in late 2025.
+    </p>
+
+    <div class="chart-card">
+      <iframe src="plotly_bar_chart.html"></iframe>
+    </div>
+
+    <p class="chart-method">
+      <strong>How this chart was built:</strong>
+      This grouped bar chart was created using <strong>Plotly</strong> to emphasize
+      the magnitude of recent declines.
+      Displaying both quarter-over-quarter and year-over-year measures side by side
+      highlights the persistence and depth of the downturn.
+    </p>
+  </div>
+
+  <aside class="aside">
+    <h3 style="font-size:15px; margin-top:0">Quick takeaways</h3>
+    <ul>
+      <li>Both measures are negative and diverging in 2025.</li>
+      <li>Bar chart highlights the magnitude in each recent quarter.</li>
+    </ul>
+  </aside>
+
+</section>
+
+
+<footer>
+  <p>
+    Visualization and analysis by Arnav Singhal · Assessment submission for S&P Global
+  </p>
+</footer>
+
+</div>
+
+</body>
+</html>
